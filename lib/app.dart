@@ -16,7 +16,7 @@ class _AppState extends State<App> {
   //好友界面
   ContactsPage contacts;
   //我的界面
-  PersonalPage me;
+  Personal me;
 
   currentPage() {
     switch (_currentIndex) {
@@ -32,7 +32,7 @@ class _AppState extends State<App> {
         return contacts;
       case 2:
         if (me == null) {
-          me = new PersonalPage();
+          me = new Personal();
         }
         return me;
       default:
